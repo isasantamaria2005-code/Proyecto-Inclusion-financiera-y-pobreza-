@@ -55,27 +55,8 @@ Página con todos los archivos de la encuesta: https://www.bancadelasoportunidad
 7. **Atípicos:** regla del rango intercuartílico, con decisión justificada.
 8. **Análisis exploratorio:** estadísticas ponderadas con el factor de expansión, distribuciones, comparaciones por zona, ingreso y departamento, barreras al crédito, uso del crédito, pruebas t de diferencia de medias y matriz de correlación.
 
-## 6. Estructura del repositorio
 
-```
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── data/
-│   ├── raw/          # microdatos de la encuesta y DIVIPOLA (descargados por el notebook)
-│   └── processed/    # base limpia para la etapa de modelos
-├── notebooks/
-│   └── Proyecto_Inclusion_Financiera_Entrega2.ipynb
-├── outputs/
-│   ├── figures/      # gráficas del análisis exploratorio
-│   └── tables/       # tablas_eda.xlsx: descriptivas, rechazo, barreras, correlaciones, atípicos...
-└── docs/
-    ├── Documento_analisis_entrega2.docx / .pdf
-    ├── Presentacion_entrega2.pptx / .pdf
-    └── Guia_sustentacion.md
-```
-
-## 7. Instalación y ejecución
+## 6. Instalación y ejecución
 
 **En Google Colab (recomendado):** abrir `notebooks/Proyecto_Inclusion_Financiera_Entrega2.ipynb` y usar *Entorno de ejecución > Ejecutar todas*. El notebook descarga las bases, crea las carpetas y guarda todas las gráficas y tablas.
 
@@ -90,7 +71,7 @@ jupyter notebook notebooks/Proyecto_Inclusion_Financiera_Entrega2.ipynb
 
 Si alguna página oficial bloquea la descarga, las mismas bases están en `data/raw/` de este repositorio.
 
-## 8. Principales resultados
+## 7. Principales resultados
 
 Cifras ponderadas con el factor de expansión `Fexp_Reg_Rur` (36,1 millones de adultos).
 
@@ -103,7 +84,7 @@ Cifras ponderadas con el factor de expansión `Fexp_Reg_Rur` (36,1 millones de a
 
 El detalle está en `docs/Documento_analisis_entrega2.pdf` y en el notebook.
 
-## 9. Limitaciones
+## 8. Limitaciones
 
 - **Asociación, no causalidad:** los datos son de corte transversal y no hay variación exógena en el acceso al crédito. Las diferencias observadas pueden deberse a selección.
 - **Unidad de análisis:** el crédito se pregunta a la persona entrevistada, no al hogar completo.
